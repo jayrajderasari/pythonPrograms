@@ -1,22 +1,25 @@
 # -*- coding: utf-8 -*-
 """
-Created on Wed Nov 23 18:20:33 2022
+Created on Thu Dec  1 23:55:48 2022
 
 @author: Jayraj Derasari
 """
-#taking input of income
-income=int(input("Enter your income:"))
 
-if income<500000:                                   # 0 tax for income less than 5L
-    tax = 0
+#taking income as input
+income=int(input("Enter Income:"))
+# tax=0
+
+#Calculating tax as per the tax slab and income
+if income<=500000:
+    tax=0   #No tax till income of 5Lakhs as standard deduction
 elif income>500000 and income<1000000:
-    income = income - 500000
-    tax = (income*10)/100                           # tax of income over 5L as 10%
-elif income>1000000:
-    income = income - 1000000
-    tax = ((500000*10)/100) + ((income*20)/100)     # tax of income between 5L and 10L is fix 10%=50k and calculating tax over 10L as 20%
-else:
-    tax=0
+    tax=0   #No tax till income of 5Lakhs
+    income=income-500000    #Calculating taxable income by removing standard deduction
+    tax=income*10/100   #Calculating tax of income over 5Lakhs as 10%
+elif income>=1000000:
+    tax=50000   #Tax of income of tax slab of 5L to 10L
+    income=income-1000000 #Removing income of standard deduction and lesser tax slab
+    tax=tax+(income*20/100) # Calculating tax of income over 10Lakhs as 20%
     
-#printing payable tax    
-print("Tax payable is:", tax)
+#printing payable tax
+print("Tax Payable:", tax)
