@@ -5,6 +5,11 @@ Created on Fri Dec  2 16:33:53 2022
 @author: Jayraj Derasari
 """
 
+"""
+19. Write a python program to check whether the entered number is an Armstrong number or
+not.
+"""
+
 #taking number as string input and storing as n
 n=str(input("Enter a number:"))
 

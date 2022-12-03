@@ -5,6 +5,17 @@ Created on Thu Dec  1 23:55:48 2022
 @author: Jayraj Derasari
 """
 
+"""
+15. Calculate income tax for the given income by following the given rules:
+Income Rate (in %)
+upto Rs 5,00,000 0%
+upto Rs 10,00,000 10% (of income above 5,00,000)
+above Rs 10,00,000 20% (of income above 10,00,000)
+Expected Output:
+Enter your income (Rs): 600000
+Income tax payable by you (Rs) = 10000/-
+"""
+
 #taking income as input
 income=int(input("Enter Income:"))
 # tax=0

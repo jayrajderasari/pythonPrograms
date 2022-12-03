@@ -4,6 +4,12 @@ Created on Wed Nov 23 00:13:26 2022
 
 @author: Jayraj Derasari
 """
+
+"""
+6. Write a Python program to input angles of a triangle and check whether triangle is valid or
+not.
+"""
+
 #taking input of angles of triangle
 a=int(input("Enter angle 1:"))
 b=int(input("Enter angle 2:"))

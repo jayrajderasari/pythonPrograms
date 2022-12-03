@@ -4,7 +4,12 @@ Created on Wed Nov 23 00:28:00 2022
 
 @author: Jayraj Derasari
 """
-#colecting values
+
+"""
+7. Write a Python program to calculate the Area of a Triangle.
+"""
+
+#collecting values of height and base of triangle
 base=int(input("Enter length of base of triangle:"))
 height=int(input("Enter height of traingle:"))
 

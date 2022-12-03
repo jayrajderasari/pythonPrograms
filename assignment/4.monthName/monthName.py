@@ -5,6 +5,13 @@ Created on Tue Nov 22 23:49:12 2022
 @author: Jayraj Derasari
 """
 
+"""
+4. Write a Python program to read a month number and print corresponding month name.
+Sample output:
+Enter Month Number: 11
+November
+"""
+
 #taking month number as input
 monthNumber=int(input("Enter number of Month:"))
 

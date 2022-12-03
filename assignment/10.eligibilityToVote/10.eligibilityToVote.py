@@ -5,6 +5,10 @@ Created on Fri Dec  2 00:17:28 2022
 @author: Jayraj Derasari
 """
 
+"""
+10. Write a Python program to check whether a person is eligible to vote or not.
+"""
+
 #taking age as input
 age = int(input("Please enter your age:"))
 

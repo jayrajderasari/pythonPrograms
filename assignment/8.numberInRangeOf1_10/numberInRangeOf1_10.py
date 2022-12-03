@@ -4,6 +4,12 @@ Created on Wed Nov 23 13:02:10 2022
 
 @author: Jayraj Derasari
 """
+
+"""
+8. Make a program that asks the number between 1 and 10. If the number is out of range the
+program should display “invalid number”.
+"""
+
 #taking input from user
 n=int(input("Enter a number:"))
 
