@@ -5,9 +5,9 @@ Created on Tue Nov 22 23:46:24 2022
 @author: Jayraj Derasari
 """
 
-"""
-3. Write a Python program to check whether a number is divisible by 5 or not.
-"""
+# =============================================================================
+# 3. Write a Python program to check whether a number is divisible by 5 or not.
+# =============================================================================
 
 #taking value from user
 n = int(input("Enter a number:"))

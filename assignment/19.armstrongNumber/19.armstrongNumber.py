@@ -5,21 +5,21 @@ Created on Fri Dec  2 16:33:53 2022
 @author: Jayraj Derasari
 """
 
-"""
-19. Write a python program to check whether the entered number is an Armstrong number or
-not.
-"""
+# =============================================================================
+# 19. Write a python program to check whether the entered number is an Armstrong number or
+# not.
+# =============================================================================
 
 #taking number as string input and storing as n
-n=str(input("Enter a number:"))
+n = str(input("Enter a number:"))
 
 #calculating length of string
-l=len(n)
+l = len(n)
 
 #defining sum of nth power of digits to be calculated
-sum=0
+sum = 0
 
-#Using for loop for calculating sum of nth power of digits
+#using for loop to calculate sum of nth power of digits
 for i in range (0,l):
     sum=sum+(int(n[i]))**l 
     
