@@ -16,7 +16,7 @@ b = float(input("Enter angle 2:"))
 c = float(input("Enter angle 3:"))
 
 #checking that all angles are positive and sum of angles equal 180
-if a+b+c == 180 and a > 0 and b > 0 and c > 0:
+if a + b + c == 180 and a > 0 and b > 0 and c > 0:
     print("The triangle is valid")
 else:
     print("The triangle is invalid")

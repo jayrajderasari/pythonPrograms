@@ -13,7 +13,7 @@ Created on Tue Nov 22 23:46:24 2022
 n = int(input("Enter a number:"))
 
 #Calculating and printing if n is even or odd
-if n%2==0:
+if n % 2 == 0:
     print("The number is Even")
 else:
     print("The number is Odd")

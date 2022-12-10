@@ -21,10 +21,10 @@ sum = 0
 
 #using for loop to calculate sum of nth power of digits
 for i in range (0,l):
-    sum=sum+(int(n[i]))**l 
+    sum = sum + (int(n[i])) ** l 
     
 #Checking and printing if n is equal to sum then number is armstrong
-if int(n)==sum: #using int(n) as string cannot be compared with integer
+if int(n) == sum: #using int(n) as string cannot be compared with integer
     print ("The number is Armstrong")
 else:
     print("The number is not Armstrong")

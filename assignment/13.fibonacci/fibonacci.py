@@ -20,7 +20,7 @@ from sys import exit
 n = int(input("Enter a number:"))
 
 #Inititalising array of fibonacci and its initial values
-fibonacci = [0]*n
+fibonacci = [0] * n
 fibonacci[0] = 0
 
 #If n equal to 1 then the second value of fibonacci cannot be assigned
