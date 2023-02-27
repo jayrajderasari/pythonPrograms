@@ -4,8 +4,15 @@ Created on Tue Dec  6 19:43:13 2022
 
 @author: Jayraj Derasari
 """
-from pandas import DataFrame, Series
+# =============================================================================
+# Documentation for Pandas and Matplotlib
+# =============================================================================
+
+###Importing a CSV file###
 import pandas as pd
+from pandas import DataFrame, Series
+sample_data = pd.read_csv('22.csv')
+
 
 #Defining Series
 obj = Series(['a', 'b', 'c', 'd', 'e'], [1,2,3,4,5,])   
@@ -18,16 +25,71 @@ obj = Series(['a', 'b', 'c', 'd', 'e'], [1,2,3,4,5,])
 
 #Defining DataFrame
 data = {'Name' : ['Jayraj', 'Kartik', 'Jay', 'Raj'],
-        'Roll No.' : [11, 12, 13, 15],
-        'Programme' : ['Btech.', 'CSE', 'BTech.', 'BTech. CSE']
+        'Roll No.' : [11, 18, 13, 15],
+        'Programme' : ['BTech. CSE','BTech. CE','BTech. CSE','BTech. CSE'],
+        'Status' : ['Student','Job','Student','Student']
         }
-frame = DataFrame(data)
-    #   Name  Roll No.   Programme
-    # 0  Jayraj        11      Btech.
-    # 1  Kartik        12         CSE
-    # 2     Jay        13      BTech.
-    # 3     Raj        15  BTech. CSE    
+df = DataFrame(data)
+    #      Name  Roll No.   Programme   Status
+    # 0  Jayraj        11  BTech. CSE  Student
+    # 1  Kartik        18   BTech. CE      Job
+    # 2     Jay        13  BTech. CSE  Student
     
+    
+#printing sliced dataframe    
+df[0:3]  #print no of rows
+#      Name  Roll No. Programme
+# 0  Jayraj        11    BTech. CSE
+# 1  Kartik        18     BTech. CE
+    # 2     Jay        13    BTech. CSE
+df['Name'][0:2]  #print no of rows of a specific column
+    # 0    Jayraj
+    # 1    Kartik
+
+#printing data using CSV
+df.Name.iloc[0]      #Jayraj
+df.iloc[0:2,1:3]
+   #    Roll No.   Programme
+   # 0        11  BTech. CSE
+   # 1        18   BTech. CE
+
+
+# Renaming dataframe columns
+df.rename(columns = { 'Roll No.' : 'Enrollment No.' , 'Name' : 'Student Name'}, inplace = True)
+    #   Student Name  Enrollment No.   Programme   Status
+    # 0       Jayraj              11  BTech. CSE  Student
+    # 1       Kartik              18   BTech. CE      Job
+    # 2          Jay              13  BTech. CSE  Student
+    # 3          Raj              15  BTech. CSE  Student
+    
+    
+# =============================================================================
+# Count number of unique values of dataframe using pandas
+# =============================================================================
+df.Status.value_counts()
+    # Student    3
+    # Job        1
+
+df.Status.value_counts(normalize=True)*100
+    # Student    75.0
+    # Job        25.0
+pd.crosstab(df['Programme'], df['Status'])
+    # Status      Job  Student
+    # Programme               
+    # BTech. CE     1        0
+    # BTech. CSE    0        3
+
+# =============================================================================
+# Sorting values acc to columns using pandas
+# =============================================================================
+df[['Student Name','Enrollment No.']].sort_values('Enrollment No.')[0:5]
+    #   Student Name  Enrollment No.
+    # 0  Jayraj        11
+    # 2     Jay        13
+    # 3     Raj        15
+    # 1  Kartik        18
+    
+
 # To check null/ NAN/ NA/ none values from dataset
 # isnull()
 # notnull()
@@ -36,7 +98,10 @@ frame = DataFrame(data)
 # replace()
 # interpolate()
 
-### Using pandas for handling missing data###
+# =============================================================================
+# Using pandas for handling missing data
+# =============================================================================
+
 import numpy as np
 df = pd.DataFrame({
     'A':[1,2,np.nan],
@@ -48,7 +113,6 @@ df = pd.DataFrame({
     # 0  1.0  5.0  1  4.0
     # 1  2.0  NaN  2  5.0
     # 2  NaN  NaN  3  NaN
-
 #Solution1: remove missing values
 df = pd.DataFrame({
     'A':[1,2,np.nan],
@@ -101,7 +165,7 @@ print(df)
     # 1  2.0  1.5  2  5.0
     # 2  1.5  1.5  3  1.5
     
-# ##Imputate to median##
+# #Imputate to median##
 df = pd.DataFrame({
     'A':[1,2,np.nan],
     'B':[5,np.nan,np.nan],
@@ -118,7 +182,7 @@ print(df)
     # 1  2.0  1.5  2  5.0
     # 2  1.5  1.5  3  1.5
 
-##Imputate to ffill##
+# #Imputate to ffill##
 df = pd.DataFrame({
     'A':[1,2,np.nan],
     'B':[5,np.nan,np.nan],
@@ -131,33 +195,47 @@ print(df)
     # 0  1.0  5.0  1  4.0
     # 1  2.0  5.0  2  5.0
     # 2  2.0  5.0  3  5.0
-    
+  
+# =============================================================================
+# Arrange series using pandas
+# =============================================================================
+
 #make an array from a to b with equal spaces
 arrange = np.arange(4, 20, 3) #to arrange values from 4 to 20 with difference of 3
 print(arrange)
     # [ 4  7 10 13 16 19]
     
-###Importing a CSV file###
-import pandas as pd
-from matplotlib import pyplot as plt
-sample_data = pd.read_csv('22.csv')
-sample_data = sample_data.Name.iloc[0]      #Jayraj
 
-#Generate random numbers between 0 and 1
+# =============================================================================
+# Random numbers
+# =============================================================================
+
+# Generate random numbers between 0 and 1
 r = np.random.rand()    #if want multiple numbers then enter the number in (), it will be in list data type
+print(r)                
+
+# Generate random numbers between 0 and 100
+r = np.random.randint(0,100)    #if want multiple numbers then enter the number in (), it will be in list data type
+print(r)                
+
+# Generate random numbers from a list
+list = ['a','b','c','d']
+r = np.random.choice(list,2)    #if want multiple values then enter the number in (), it will be in list data type
 print(r)                
 
 
 
-# ###Line Plots###
+# =============================================================================
+# Line Plots
+# =============================================================================
 
 #Single line plot#
 from matplotlib import pyplot as plt
 x = [1, 2, 3]   #define x
 y = [1, 4, 9]   #define y
 plt.title("test plot")  #define title of graph
-plt.xlabel("x") #define label of x
-plt.ylabel("y") #define label of y
+plt.xlabel('x') #define label of x
+plt.ylabel('y') #define label of y
 plt.plot(x,y)   #plot x,y graph
 
 #Multi line plot#

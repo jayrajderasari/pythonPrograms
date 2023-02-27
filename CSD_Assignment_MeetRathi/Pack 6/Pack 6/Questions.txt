@@ -1,0 +1,27 @@
+
+QGIS Questions:
+=============== 
+
+1. Do georeferencing of the given image "Spain.png". Plot any 3 cities displaying their names with Air Quality Index during the month of January 2020. (3 marks)
+2. Mark any 3 most affected area due to CoVid-19 on the map with appropriate labels such as area name and no of people affected. (3 marks)
+2. Plot the longest river in the given map. (2 marks)
+3. Plot any one forest region in the given map.(2 marks)
+
+Python Questions: (10 marks)
+============================
+
+Analyze the give dataset by performing folloing Tasks after importing data from the excel/csv file into Python. Apply appropriate methods/functions/attributes such as query, mean, median, sum, count, fillna, sort, startswith, contains, bar, pie, scatter, plot, etc. on the data. Wherever it is required rename the columns because the column names in which there is space in between may display the error.
+
+Python Questions:
+=================
+
+1.   Sort the bank transactions on descending order of Total ithdrawal amount.
+2.   Display transaction details which were done on "Sunday".
+3.   Find sum of the column "Total amount Withdrawn".
+4.   Display the columns Transaction Date, No Of Withdrawals, No Of XYZ Card      Withdrawals, No Of Other Card Withdrawals and Total amount Withdrawn.
+5.   Display ATM Names where no. of Withdrawals through XYZ Card is more than Other Card.
+6.   Extract Weekdays and Total amount withdraw columns and store in a new          DataFrame named new_df.
+7.   Draw barchart of weekdays vs. total amount withdraw in red colored bars and of width 3.
+8.   Draw scatter plot of no. of Withdrawals through XYZ Card vs. Other Card with   "^" marker of size 150 points and "cyan" colour.
+9.   Rename column "Festival Religion (H-Holiday,C-Closing, NH-Not Holoday)" to     "Fest_Rel".
+10.  Display row no. 50 to 100.

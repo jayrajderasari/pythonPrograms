@@ -1,0 +1,31 @@
+QGIS Questions:
+=============== 
+
+1. Do georeferencing of the given image "USA.png". Plot any 3 cities displaying their names with Air Quality Index during the month of May 2020. (3 marks)
+2. Mark any 3 most affected area due to CoVid-19 on the map with appropriate labels such as area name and no of people affected. (3 marks)
+2. Plot the longest river in the given map. (2 marks)
+3. Plot any one forest region in the given map.(2 marks)
+
+Python Questions: (10 marks)
+============================
+
+Analyze the given Dataset by performing folloing Tasks after importing data from the excel/csv file into Python. Apply appropriate methods/functions/attributes such as query, mean, median, sum, fillna, sort, startswith, contains, bar, barh, pie, scatter, plot, etc. on the data. Wherever it is required rename the columns because the column names in which there is space in between may display the error.
+
+1	Find games with NA sales between 15 to 40.	
+          code:
+          output:
+		
+2	Fill null values with mean of column (NA_Sales, EU_Sales, JP_Sales).		
+3	Find games with platform = Playstation.			
+4	Find games with genre = shooting.			
+5	Find games before 2004 with NA sales >10.			
+6	Find games after 2004 with JP sales >1.			
+7	Sort games in ascending order by NA sales.			
+8	Perform addition on EU sales column.			
+9	Find mean and median of global sales.			
+10	Create a bar chart for the column platform="SNES" vs Global Sales.			
+
+
+
+
+

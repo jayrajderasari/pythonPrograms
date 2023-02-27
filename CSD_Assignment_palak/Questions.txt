@@ -1,0 +1,27 @@
+
+QGIS Questions:
+=============== 
+
+1. Do georeferencing of the given image "France.jpg". Plot any 3 cities displaying their names with Air Quality Index during the month of April 2020. (3 marks)
+2. Mark any 3 most affected area due to CoVid-19 on the map with appropriate labels such as area name and no of people affected. (3 marks)
+2. Plot the longest river in the given map. (2 marks)
+3. Plot any one forest region in the given map.(2 marks)
+
+Python Questions: (10 marks)
+============================
+
+Analyze the given dataset by performing folloing Tasks after importing data from the excel/csv file into Python. Apply appropriate methods/functions/attributes such as query, mean, median, sum, count, fillna, sort, startswith, contains, bar, pie, scatter, plot, etc. on the data. Wherever it is required rename the columns because the column names in which there is space in between may display the error.
+
+Python Questions:
+=================
+1.      Display first 15 rows.
+2.      Display transpose of the dataset.
+3.      Display the rows where Genre is either ‘Drama’ or ‘Comedy’.
+4.	Count total number of rows.
+5.	Find maximum, minimum and average of Profitability.
+6.	Display movies of Drama Genre and Rotten Tomatoes % greater than 60.
+7.	Replace all the values ‘comedy’ with ‘Comedy’ in Genre column.
+8.	Sort records in the ascending order of Rotten Tomatoes % and Genre.
+9.	Rename column name ‘Year’ with ‘Released_Year’.
+10. 	Draw line graph of ‘Year’ vs. 'Audience score %' and 'Year' vs. 'Rotten Tomatoes %' in the same plot.
+ Both the line plots should be displayed in different colors with different line styles.

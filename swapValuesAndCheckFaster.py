@@ -7,27 +7,29 @@ Created on Wed Nov 30 10:10:17 2022
 import timeit
 start_time=timeit.default_timer()
 
-start_time=timeit.default_timer()
 
 #A.
-a=2
-b=5
-temp=a
-a=b
-b=temp
-print(a,b)
+for i in range(0,100):
+    a=2
+    b=5
+    temp=a
+    a=b
+    b=temp
+# print(a,b)
 end_time=timeit.default_timer()
 exe_time_A = end_time-start_time
 print("Execution time:",exe_time_A)
 
 
 #B.
-a=2
-b=5
-a=a^b
-b=a^b
-a=a^b
-print(a,b)
+start_time=timeit.default_timer()
+for i in range(0,100):
+    a=2
+    b=5
+    a=a^b
+    b=a^b
+    a=a^b
+# print(a,b)
 end_time=timeit.default_timer()
 exe_time_B = end_time-start_time
 print("Execution time:",exe_time_B)
