@@ -6,6 +6,10 @@ Created on Sat Dec  3 20:58:47 2022
 """
 """ Documentation for python"""
 
+# =============================================================================
+# Working with variables
+# =============================================================================
+
 #Declaring variables
 x = 5
 y = 2.5
@@ -67,7 +71,7 @@ print(str.isalpha())    #False
 #numeric
 print(str.isnumeric())  #False
 
-#remove extra spaces form stating and end
+#remove extra spaces form starting and end
 str = "  Jayraj   "
 print(str.strip())      #Jayraj
 
@@ -108,10 +112,10 @@ fruits[0] = 'Blueberries'   #['Blueberries', 'Mangoes', 'Apples']
 fruits.insert(2, 'Strawberries')    #['Blueberries', 'Mangoes', 'Strawberries', 'Apples']
 
 # =============================================================================
-# Tuple - List which dont allow duplicates and is unordered, unchangable, unindexed##
+# Tuple - List which dont allow duplicates and is unordered, unchangable, unindexed
 # =============================================================================
 
-##tuples have () brackets while lists have [] brackets
+#tuples have () brackets while lists have [] brackets
 fruits = ('Blueberries', 'Mangoes', 'Strawberries', 'Apples')
 
 #Tuples dont change values
@@ -144,6 +148,7 @@ del fruits_set      #to delete the set as it was never defined
 # =============================================================================
 # Dictionary
 # =============================================================================
+
 #creating a dictionary
 person = {
     'first_name':'Jayraj',
@@ -182,7 +187,7 @@ print(person)   #{}
 #Length of dictionary
 print(len(person2)) #3
 
-##Lists of dict
+#Lists of dict
 people = [
     {'name':'Jayraj', 'Roll_No':'Au2240109'},
     {'name':'Kartik', 'Roll_No':'Au1234567'}
